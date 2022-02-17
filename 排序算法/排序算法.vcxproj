@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="bubbleSort.h" />
     <ClInclude Include="insertSort.h" />
+    <ClInclude Include="quickSort.h" />
     <ClInclude Include="selectSort.h" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +150,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mergeSort.cpp" />
     <ClCompile Include="mergeSort.h" />
+    <ClCompile Include="quickSort.cpp" />
     <ClCompile Include="selectSort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

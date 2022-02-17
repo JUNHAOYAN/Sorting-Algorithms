@@ -3,6 +3,7 @@
 #include"selectSort.h"
 #include"bubbleSort.h"
 #include"insertSort.h"
+#include"quickSort.h"
 #include"mergeSort.h"
 using namespace std;
 
@@ -51,6 +52,17 @@ void testMergeSort() {
 	print(v);
 }
 
+
+void testQuickSort() {
+	int arr[] = { 1, 8, 100, 25, 5, 7, 8 , 4, 67, 88 };
+	vector<int> v(10);
+	for (int i = 0; i < 10; i++) {
+		v[i] = arr[i];
+	}
+	quickSort(v, 0, v.size() - 1);
+	print(v);
+}
+
 void test00() {
 	int *temp = new int[10];
 	// temp指针在结束循环的时候是指在数组最后的一个元素的后一个位置
@@ -73,6 +85,6 @@ void test00() {
 }
 
 int main() {
-	testMergeSort();
+	testQuickSort();
 	return 0;
 }
