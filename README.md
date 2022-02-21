@@ -4,3 +4,5 @@
 * Selection Sort
 * Merge Sort
 * Quick Sort
+* Bucket Sort
+* Count Sort
