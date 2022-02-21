@@ -140,12 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bubbleSort.h" />
+    <ClInclude Include="bucketSort.h" />
+    <ClInclude Include="countSort.h" />
     <ClInclude Include="insertSort.h" />
     <ClInclude Include="quickSort.h" />
     <ClInclude Include="selectSort.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bubbleSort.cpp" />
+    <ClCompile Include="bucketSort.cpp" />
+    <ClCompile Include="countSort.cpp" />
     <ClCompile Include="insertSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mergeSort.cpp" />

@@ -5,6 +5,8 @@
 #include"insertSort.h"
 #include"quickSort.h"
 #include"mergeSort.h"
+#include"countSort.h"
+#include"bucketSort.h"
 using namespace std;
 
 void print(int arr[], int num) {
@@ -54,12 +56,34 @@ void testMergeSort() {
 
 
 void testQuickSort() {
-	int arr[] = { 1, 8, 100, 25, 5, 7, 8 , 4, 67, 88 };
+	int arr[] = { 1, 8, 100, 25, 5, 7, 8 , 4, 67, 75 };
 	vector<int> v(10);
 	for (int i = 0; i < 10; i++) {
 		v[i] = arr[i];
 	}
-	quickSort(v, 0, v.size() - 1);
+	quickSort2(v, 0, v.size() - 1);
+	print(v);
+}
+
+void testCountSort() {
+	int arr[] = { 1, 8, 100, 25, 5, 7, 8 , 4, 67, 75 };
+	vector<int> v(10);
+	for (int i = 0; i < 10; i++) {
+		v[i] = arr[i];
+	}
+	countSort2(v);
+	print(v);
+}
+
+
+void testBucketSort() {
+	int arr[] = { 1, 8, 100, 25, 5, 7, 8 , 4, 67, 75, 101, 130, 140, 150, 189 };
+	int len = sizeof(arr) / sizeof(arr[0]);
+	vector<int> v(len);
+	for (int i = 0; i < len; i++) {
+		v[i] = arr[i];
+	}
+	buckSort(v);
 	print(v);
 }
 
@@ -85,6 +109,6 @@ void test00() {
 }
 
 int main() {
-	testQuickSort();
+	testBucketSort();
 	return 0;
 }
